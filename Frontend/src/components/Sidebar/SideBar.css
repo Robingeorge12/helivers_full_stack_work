@@ -1,0 +1,83 @@
+.sidebar-container{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    position: relative;
+}
+.sidebar-checkdiv{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* {
+
+import React, { useState } from 'react';
+
+function CheckboxList() {
+  // Initialize state to manage the selected checkboxes
+  const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
+
+  // Handler function to toggle the selection of a checkbox
+  const handleCheckboxChange = (value) => {
+    if (selectedCheckboxes.includes(value)) {
+      // If value is already in the selectedCheckboxes array, remove it
+      setSelectedCheckboxes(selectedCheckboxes.filter((item) => item !== value));
+    } else {
+      // If value is not in the selectedCheckboxes array, add it
+      setSelectedCheckboxes([...selectedCheckboxes, value]);
+    }
+  };
+
+  // Function to handle sending the selected values to the backend
+  const sendSelectedValues = () => {
+    // Here, you can make an API request to send the selectedCheckboxes array to the backend.
+    // For example, using the fetch function.
+    fetch('/your-backend-api-endpoint', {
+      method: 'POST',
+      body: JSON.stringify(selectedCheckboxes),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => {
+        // Handle the response from the backend here
+      })
+      .catch((error) => {
+        // Handle any errors here
+      });
+  };
+
+  return (
+    <div>
+      {/* Render checkboxes dynamically based on your data */
+      /* <label>
+        <input
+          type="checkbox"
+          value="checkbox1"
+          checked={selectedCheckboxes.includes('checkbox1')}
+          onChange={() => handleCheckboxChange('checkbox1')}
+        />
+        Checkbox 1
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="checkbox2"
+          checked={selectedCheckboxes.includes('checkbox2')}
+          onChange={() => handleCheckboxChange('checkbox2')}
+        />
+        Checkbox 2
+      </label>
+      {/* Add more checkboxes as needed */
+
+      /* <button onClick={sendSelectedValues}>Send Selected Values</button>
+    </div>
+  );
+}
+
+export default CheckboxList; */
+
+
+/* } */ 
